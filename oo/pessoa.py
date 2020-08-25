@@ -12,3 +12,7 @@ if __name__ == '__main__':
     pai   = Pessoa(filho,nome='Elton')
     for filho in pai.filhos:
         print(filho.nome)
+    pai.sobrenome = 'Procópio'
+    del pai.idade
+    print(filho.__dict__)
+    print(pai.__dict__)
